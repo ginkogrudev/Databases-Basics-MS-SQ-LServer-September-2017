@@ -4,14 +4,14 @@ CREATE DATABASE Minions
 CREATE TABLE Minions
 (
 	Id INT NOT NULL PRIMARY KEY,
-	Name nvarchar(50),
-	Age int
+	Name NVARCHAR(50),
+	Age INT
 )
 
 CREATE TABLE Towns
 (
 	Id INT NOT NULL PRIMARY KEY,
-	Name nvarchar(50)
+	Name NVARCHAR(50)
 )
 
 ALTER TABLE Minions

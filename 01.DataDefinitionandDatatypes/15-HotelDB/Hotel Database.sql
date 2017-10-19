@@ -3,78 +3,78 @@ CREATE DATABASE Hotel
 CREATE TABLE Employees
 (
 	Id INT PRIMARY KEY IDENTITY(1,1),
-	FirstName nvarchar(50) NOT NULL,
-	LastName nvarchar(50),
-	Title nvarchar(50) NOT NULL,
-	Notes nvarchar(255)
+	FirstName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50),
+	Title NVARCHAR(50) NOT NULL,
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE Customers
 (
 	AccountNumber INT PRIMARY KEY IDENTITY(1,1),
-	FirstName nvarchar(50) NOT NULL,
-	LastName nvarchar(50) NOT NULL,
+	FirstName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50) NOT NULL,
 	PhoneNumber INT,
 	EmergencyName nvarchar(255),
 	EmergencyNumber INT NOT NULL,
-	Notes nvarchar(255)
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE RoomStatus
 (
-	RoomType nvarchar(50) PRIMARY KEY NOT NULL,
-	Notes nvarchar(255)
+	RoomType NVARCHAR(50) PRIMARY KEY NOT NULL,
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE RoomTypes
 (
-	RoomType nvarchar(50) PRIMARY KEY NOT NULL,
-	Notes nvarchar(255)
+	RoomType NVARCHAR(50) PRIMARY KEY NOT NULL,
+	Notes NVARCHAR(255)
 )
 
 
 CREATE TABLE BedTypes
 (
-	BedType nvarchar(50) PRIMARY KEY NOT NULL,
-	Notes nvarchar(255)
+	BedType NVARCHAR(50) PRIMARY KEY NOT NULL,
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE Rooms
 (
 	RoomNumber INT PRIMARY KEY IDENTITY(1,1),
-	RoomType nvarchar(50) NOT NULL,
-	BedType nvarchar(50) NOT NULL,
-	Rate nvarchar(50),
-	RoomStatus nvarchar(50),
-	Notes nvarchar(255)
+	RoomType NVARCHAR(50) NOT NULL,
+	BedType NVARCHAR(50) NOT NULL,
+	Rate NVARCHAR(50),
+	RoomStatus NVARCHAR(50),
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE Payments
 (
 	Id INT PRIMARY KEY IDENTITY(1,1),
 	EmployeeId INT UNIQUE NOT NULL,
-	PaymentDate date,
+	PaymentDATE DATE,
 	AccountNumber INT NOT NULL,
-	FirstDateOccupied date,
-	LastDateOccupied date,
+	FirstDateOccupied DATE,
+	LastDateOccupied DATE,
 	TotalDays INT NOT NULL,
 	AmountCharged INT NOT NULL,
 	TaxRate INT,
 	TaxAmount INT,
 	PaymentTotal INT NOT NULL,
-	Notes nvarchar(255)
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE Occupancies
 (
 	Id INT PRIMARY KEY IDENTITY(1,1),
 	EmployeeId INT UNIQUE NOT NULL,
-	DateOccupied date,
+	DateOccupied DATE,
 	AccountNumber INT NOT NULL,
 	RoomNumber INT NOT NULL,
 	RateApplied INT,
 	PhoneCharge INT,
-	Notes nvarchar(255)
+	Notes NVARCHAR(255)
 )
 
 INSERT INTO Employees(FirstName,LastName,Title,Notes)

@@ -12,7 +12,7 @@ SELECT FirstName, LastName, Salary FROM Employees
 SELECT FirstName, MiddleName, LastName FROM Employees
 
 --06.
-SELECT FirstName + '.'+ LastName+'@softuni.bg' as 'Full Email Address' FROM Employees
+SELECT FirstName + '.'+ LastName+'@softuni.bg' AS 'Full Email Address' FROM Employees
 
 --07.
 SELECT Distinct Salary FROM Employees

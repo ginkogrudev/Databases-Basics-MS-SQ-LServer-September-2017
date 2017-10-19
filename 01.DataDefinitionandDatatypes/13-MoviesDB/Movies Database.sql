@@ -1,76 +1,77 @@
 CREATE TABLE Directors
 (
-	Id int IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	DirectorName nvarchar(255) NOT NULL,
-	Notes nvarchar(255)
+	Id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	DirectorName NVARCHAR(255) NOT NULL,
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE Genres
 (
-	Id int IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	GenreName nvarchar(255) NOT NULL,
-	Notes nvarchar(255)
+	Id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	GenreName NVARCHAR(255) NOT NULL,
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE Categories
 (
-	Id int IDENTITY(1,1) NOT NULL  PRIMARY KEY,
-	CategoryName nvarchar(255) NOT NULL,
-	Notes nvarchar(255)
+	Id INT IDENTITY(1,1) NOT NULL  PRIMARY KEY,
+	CategoryName NVARCHAR(255) NOT NULL,
+	Notes NVARCHAR(255)
 )
 
 
 CREATE TABLE Movies
 (
-	Id int IDENTITY(1,1) NOT NULL PRIMARY KEY,	Title nvarchar(255) NOT NULL,
-	DirectorID int UNIQUE,
-	CopyrightYear date,
-	Length decimal(10,2),
-	GenreID int UNIQUE,
-	CategoryID int,
-	Rating int,
-	Notes nvarchar(255)
+	Id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	Title NVARCHAR(255) NOT NULL,
+	DirectorID INT UNIQUE,
+	CopyrightYear DATE,
+	Length DECIMAL(10,2),
+	GenreID INT UNIQUE,
+	CategoryID INT,
+	Rating INT,
+	Notes NVARCHAR(255)
 )
 
 INSERT INTO Directors(DirectorName, Notes)
-Values('Pesho', NULL)
+Values('Peter', NULL)
 INSERT INTO Directors(DirectorName, Notes)
-Values('Gosho', 'Nearly done!')
+Values('George', 'Nearly done!')
 INSERT INTO Directors(DirectorName, Notes)
 Values('Maria', 'Completely done!')
 INSERT INTO Directors(DirectorName, Notes)
-Values('Ivanka', NULL)
+Values('Ivanina', NULL)
 INSERT INTO Directors(DirectorName, Notes)
-Values('Todorka', NULL)
+Values('Radka', NULL)
 
 INSERT INTO Genres(GenreName, Notes)
 Values('Pesho', NULL)
 INSERT INTO Genres(GenreName, Notes)
-Values('Gosho', 'Completely done!')
+Values('Tomi', 'Completely done!')
 INSERT INTO Genres(GenreName, Notes)
-Values('Ivanka', NULL)
+Values('Annie', NULL)
 INSERT INTO Genres(GenreName, Notes)
-Values('Mariika', 'Completely done!')
+Values('Thresh', 'Completely done!')
 INSERT INTO Genres(GenreName, Notes)
-Values('Stefan', 'Nearly done!')
+Values('Cho', 'Nearly done!')
 
 INSERT INTO Categories(CategoryName, Notes)
-Values('Pesho', 'Completely done!')
+Values('Blitzcrank', 'Completely done!')
 INSERT INTO Categories(CategoryName, Notes)
-Values('Gosho', 'Nearly done!')
+Values('Corcki', 'Nearly done!')
 INSERT INTO Categories(CategoryName, Notes)
-Values('Pesho', NULL)
+Values('Ashe', NULL)
 INSERT INTO Categories(CategoryName, Notes)
-Values('Mariika', 'Nearly done!')
+Values('Bard', 'Nearly done!')
 INSERT INTO Categories(CategoryName, Notes)
-Values('Stefan', 'Completely done!')
+Values('Ezreal', 'Completely done!')
 
 INSERT INTO Movies(Title, DirectorID, CopyrightYear, Length, GenreID, CategoryID,Rating,Notes)
 Values('Scary Movie', 11233412, NULL, NUll, 643675, 3, 6,NULL)
 INSERT INTO Movies(Title, DirectorID, CopyrightYear, Length, GenreID, CategoryID,Rating,Notes)
 Values('Action Movie', 535123, NULL, NUll, 123453, 2, 4,NULL)
 INSERT INTO Movies(Title, DirectorID, CopyrightYear, Length, GenreID, CategoryID,Rating,Notes)
-Values('Erotic Movie', 7657457, NULL, NUll, 51532, 1, 3,NULL)
+Values('Romantic Movie', 7657457, NULL, NUll, 51532, 1, 3,NULL)
 INSERT INTO Movies(Title, DirectorID, CopyrightYear, Length, GenreID, CategoryID,Rating,Notes)
 Values('Love movie', 123547568, NULL, NUll, 4343, 4, 2,NULL)
 INSERT INTO Movies(Title, DirectorID, CopyrightYear, Length, GenreID, CategoryID,Rating,Notes)

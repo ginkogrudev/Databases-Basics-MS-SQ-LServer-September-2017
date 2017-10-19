@@ -3,44 +3,44 @@
 CREATE TABLE Categories
 (
 	Id INT PRIMARY KEY IDENTITY(1,1),
-	CategoryName nvarchar(50) NOT NULL,
-	DailyRate int,
-	WeeklyRate int,
-	MonthlyRate int NOT NULL,
-	WeekendRate int
+	CategoryName NVARCHAR(50) NOT NULL,
+	DailyRate INT,
+	WeeklyRate INT,
+	MonthlyRate INT NOT NULL,
+	WeekendRate INT
 )
 
 CREATE TABLE Cars
 (
 	Id INT PRIMARY KEY IDENTITY(1,1),
-	Platenumber nvarchar(50) NOT NULL UNIQUE,
-	Model nvarchar(255) NOT NULL,
-	CarYear int NOT NULL,
-	CategoryId nvarchar(255),
-	Doors int,
-	Picture ntext,
-	Condition nvarchar(50) NOT NULL,
+	Platenumber NVARCHAR(50) NOT NULL UNIQUE,
+	Model NVARCHAR(255) NOT NULL,
+	CarYear INT NOT NULL,
+	CategoryId NVARCHAR(255),
+	Doors INT,
+	Picture NTEXT,
+	Condition NVARCHAR(50) NOT NULL,
 	Available INT NOT NULL
 )
 
 CREATE TABLE Employees
 (
 	Id INT PRIMARY KEY IDENTITY(1,1),
-	FirstName nvarchar(50) NOT NULL,
-	LastName nvarchar(50) NOT NULL,
-	Title nvarchar(255) NOT NULL,
-	Notes nvarchar(255)
+	FirstName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50) NOT NULL,
+	Title NVARCHAR(255) NOT NULL,
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE Customers
 (
 	Id INT PRIMARY KEY IDENTITY(1,1),
-	DriverLicenceNumber int NOT NULL UNIQUE,
-	FullName nvarchar(255) NOT NULL,
-	Address nvarchar(255),
-	City nvarchar(255) NOT NULL,
-	ZIPCode nvarchar(255),
-	Notes nvarchar(255)
+	DriverLicenceNumber INT NOT NULL UNIQUE,
+	FullName NVARCHAR(255) NOT NULL,
+	Address NVARCHAR(255),
+	City NVARCHAR(255) NOT NULL,
+	ZIPCode NVARCHAR(255),
+	Notes NVARCHAR(255)
 )
 
 CREATE TABLE RentalOrders
@@ -56,18 +56,18 @@ CREATE TABLE RentalOrders
 	StartDate DATE,
 	EndDate DATE,
 	TotalDays INT,
-	RateApplied nvarchar(50),
-	TaxRate nvarchar(50),
-	OrderStatus nvarchar(255),
-	Notes nvarchar(255)
+	RateApplied NVARCHAR(50),
+	TaxRate NVARCHAR(50),
+	OrderStatus NVARCHAR(255),
+	Notes NVARCHAR(255)
 )
 
 INSERT INTO Categories(CategoryName, DailyRate, WeeklyRate, MonthlyRate, WeekendRate)
 VALUES('Somecategory', NULL, 3, 100, 2)
 INSERT INTO Categories(CategoryName, DailyRate, WeeklyRate, MonthlyRate, WeekendRate)
-VALUES('SomeanotherCategory', 1, NULL, 900, NULL)
+VALUES('RandomCatergory', 1, NULL, 900, NULL)
 INSERT INTO Categories(CategoryName, DailyRate, WeeklyRate, MonthlyRate, WeekendRate)
-VALUES('TheLastCategory', 4, 5, 800, 35)
+VALUES('LastCatgory', 4, 5, 800, 35)
 
 INSERT INTO Cars(Platenumber,Model,CarYear,CategoryId,Doors,Picture,Condition,Available)
 VALUES('СА 2258 АС', 'BMW', 2017, NULL,4,NULL,'New', 10)
@@ -81,14 +81,14 @@ VALUES('Gosho','Peshov','Software Developer',NULL)
 INSERT INTO Employees(FirstName,LastName,Title,Notes)
 VALUES('Pesho','Goshov','Pilot',NULL)
 INSERT INTO Employees(FirstName,LastName,Title,Notes)
-VALUES('Mariika','Petrova','Doctor',NULL)
+VALUES('Tooni','Peterson','Doctor',NULL)
 
 INSERT INTO Customers(DriverLicenceNumber, FullName, Address,City,ZIPCode,Notes)
 VALUES(5821596,'Gosho it-to',NULL,'Sofia', NULL, NULL)
 INSERT INTO Customers(DriverLicenceNumber, FullName, Address,City,ZIPCode,Notes)
-VALUES(123513,'Pesho Peshov Peshov',NULL,'England', 'TN9T4U', NULL)
+VALUES(123513,'Pesho Peshov Stamatov',NULL,'England', 'TN9T4U', NULL)
 INSERT INTO Customers(DriverLicenceNumber, FullName, Address,City,ZIPCode,Notes)
-VALUES(09834758,'Pesho Goshov Peshov',NULL,'Switzerland', NULL, NULL)
+VALUES(09834758,'Pesho Goshov Ivanov',NULL,'Switzerland', NULL, NULL)
 
 INSERT INTO RentalOrders(EmployeeId,CustomerId,CarId,TankLevel,KilometrageStart,KilometrageEnd,TotalKilometrage,StartDate,EndDate,TotalDays,RateApplied,TaxRate,OrderStatus,Notes)
 VALUES(5315351, 1351, 5, NULL, 5000, 2351, 1231245, NULL,NULL,NULL,NULL,NULL,NULL,NULL)
