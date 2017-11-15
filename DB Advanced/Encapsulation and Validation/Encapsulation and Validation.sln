@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Box", "01.Box\01.Box.csproj", "{C607C0B1-B500-4FB7-9E44-2C9BD60075B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Shopping Spree", "03.Shopping Spree\03.Shopping Spree.csproj", "{BAFF4B42-5D74-488F-9494-514765D120DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C607C0B1-B500-4FB7-9E44-2C9BD60075B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C607C0B1-B500-4FB7-9E44-2C9BD60075B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C607C0B1-B500-4FB7-9E44-2C9BD60075B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C607C0B1-B500-4FB7-9E44-2C9BD60075B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAFF4B42-5D74-488F-9494-514765D120DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFF4B42-5D74-488F-9494-514765D120DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFF4B42-5D74-488F-9494-514765D120DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFF4B42-5D74-488F-9494-514765D120DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06B8F89C-9DC9-4528-A210-16543E4197DA}
+	EndGlobalSection
+EndGlobal

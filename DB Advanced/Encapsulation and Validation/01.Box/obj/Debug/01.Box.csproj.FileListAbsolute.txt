@@ -1,0 +1,7 @@
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Encapsulation and Validation\01.Box\bin\Debug\01.Box.exe.config
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Encapsulation and Validation\01.Box\bin\Debug\01.Box.exe
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Encapsulation and Validation\01.Box\bin\Debug\01.Box.pdb
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Encapsulation and Validation\01.Box\obj\Debug\01.Box.csprojResolveAssemblyReference.cache
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Encapsulation and Validation\01.Box\obj\Debug\01.Box.csproj.CoreCompileInputs.cache
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Encapsulation and Validation\01.Box\obj\Debug\01.Box.exe
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Encapsulation and Validation\01.Box\obj\Debug\01.Box.pdb

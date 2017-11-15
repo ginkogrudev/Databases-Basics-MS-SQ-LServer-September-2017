@@ -1,0 +1,7 @@
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Inheritance and Generics\01. Single Inheritance\bin\Debug\_01.Single_Inheritance.exe.config
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Inheritance and Generics\01. Single Inheritance\bin\Debug\_01.Single_Inheritance.exe
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Inheritance and Generics\01. Single Inheritance\bin\Debug\_01.Single_Inheritance.pdb
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Inheritance and Generics\01. Single Inheritance\obj\Debug\01. Single Inheritance.csprojResolveAssemblyReference.cache
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Inheritance and Generics\01. Single Inheritance\obj\Debug\01. Single Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Inheritance and Generics\01. Single Inheritance\obj\Debug\_01.Single_Inheritance.exe
+C:\Users\Ginko\Documents\GitHub\Databases-Basics-MS-SQ-LServer-September-2017\DB Advanced\Inheritance and Generics\01. Single Inheritance\obj\Debug\_01.Single_Inheritance.pdb
